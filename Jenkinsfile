@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        OWM_API_KEY = credentials('OWM_API_KEY') // Optional if using Jenkins credentials
+        OWM_API_KEY = credentials('owm_api_key') // Optional if using Jenkins credentials
     }
 
     stages {
