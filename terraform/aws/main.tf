@@ -102,12 +102,12 @@ resource "aws_security_group" "web_sg" {
 # Backend EC2 Instance
 # -----------------------------
 resource "aws_instance" "backend" {
-  ami                    = "ami-0c02fb55956c7d316" # Amazon Linux 2
-  instance_type          = "t3.micro"
-  subnet_id              = aws_subnet.public_subnet.id
-  vpc_security_group_ids = [aws_security_group.web_sg.id]
+  ami                         = "ami-0c02fb55956c7d316" # Amazon Linux 2
+  instance_type               = "t3.micro"
+  subnet_id                   = aws_subnet.public_subnet.id
+  vpc_security_group_ids      = [aws_security_group.web_sg.id]
   associate_public_ip_address = true
-  key_name = "dhanu1"
+  key_name                    = "dhanu1"
 
   user_data = <<-EOF
               #!/bin/bash
@@ -127,12 +127,12 @@ resource "aws_instance" "backend" {
 # Frontend EC2 Instance
 # -----------------------------
 resource "aws_instance" "frontend" {
-  ami                    = "ami-0c02fb55956c7d316"
-  instance_type          = "t3.micro"
-  subnet_id              = aws_subnet.public_subnet.id
-  vpc_security_group_ids = [aws_security_group.web_sg.id]
+  ami                         = "ami-0c02fb55956c7d316"
+  instance_type               = "t3.micro"
+  subnet_id                   = aws_subnet.public_subnet.id
+  vpc_security_group_ids      = [aws_security_group.web_sg.id]
   associate_public_ip_address = true
-   key_name = "dhanu1"
+  key_name                    = "dhanu1"
 
   user_data = <<-EOF
               #!/bin/bash
