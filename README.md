@@ -78,6 +78,10 @@ This is a **full-stack weather application** featuring a modern React frontend a
           │  (Docker)        │      │  (Docker)        │
           └──────────────────┘      └──────────────────┘
 ```
+### Architecture diagram
+
+<img width="3468" height="1681" alt="diagram-export-10-12-2025-3_32_52-PM" src="https://github.com/user-attachments/assets/3c0b1a3a-ae4f-496e-9ccf-bc2ee48002b3" />
+
 
 ### Deployment Flow
 
